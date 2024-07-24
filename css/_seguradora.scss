@@ -1,0 +1,160 @@
+#seguradora {
+    overflow: hidden;
+    color: rgb(53, 53, 53);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+    background-image: url(../img/lifeIcon.png);
+    background-size: 50px;
+    background-color: rgb(236, 236, 236);
+}
+
+#seguradora-image {
+    height: 600px;
+    width: 50%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#seguradora-text {
+    z-index: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 600px;
+    width: 50%;
+}
+
+#seguradora-text div {
+    display: flex;
+    flex-flow: column;
+    width: 70%;
+    height: 500px;
+}
+
+#seguradora-text h2 {
+    width: 450px;
+}
+
+#seguradora-text h2 b {
+    color: $primary;
+}
+
+#seguradora-text p {
+    width: 98%;
+    font-size: 20px;
+}
+
+
+#seguradora-text-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#seguradora-image-card {
+    z-index: 1;
+    background-image: url("../img/test-1.jpg");
+    background-position: center;
+    border-radius: 20px;
+    background-color: black;
+    height: 470px;
+    width: 670px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.726);
+}
+
+@keyframes card-image-extra {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#seguradora-image-card-extra {
+    display: flex;
+    position: relative;
+    right: -600px;
+    bottom: 20px;
+    width: 90px;
+    height: 90px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background: linear-gradient($primary, rgb(0, 255, 255));
+    transition: transform linear 0.2s;
+    transition: opacity 0.5s linear;
+    animation: card-image-extra 1s infinite;
+    cursor: pointer;
+
+}
+
+#seguradora-image-card-extra img {
+    transform: scale(0.8);
+}
+
+@keyframes seguradora-image-overlay-entry {
+
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 470px;
+    }
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+#seguradora-image-overlay {
+    overflow: hidden;
+    color: white;
+    display: none;
+    position: absolute;
+    height: 470px;
+    width: 670px;
+    animation: seguradora-image-overlay-entry 1s;
+    background: linear-gradient(rgb(0, 197, 223), rgb(0, 159, 170));
+    opacity: 96%;
+    border-radius: 20px;
+    transition: opacity 1s linear;
+}
+
+@keyframes overlay-text-anim {
+    from {
+        left: 1000px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+#seguradora-image-overlay-text {
+    font-size: 25px;
+    display: none;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    animation: overlay-text-anim 1s ease;
+}
+
+#seguradora-image-overlay-text-2 {
+    font-size: 25px;
+    display: none;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    animation: overlay-text-anim 1s ease;
+}

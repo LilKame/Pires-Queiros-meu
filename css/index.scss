@@ -1,0 +1,33 @@
+@import './nav';
+@import './header';
+@import './cards';
+@import './seguradora';
+@import './representante';
+@import './footer';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$primary: #0ad1e7;
+$primary-font: "Montserrat", sans-serif;
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btn {
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    width: 170px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    transition: all .3s;
+    background-color: $primary;
+    &:hover {
+        background-color: #0ad1e7a4
+    }
+}

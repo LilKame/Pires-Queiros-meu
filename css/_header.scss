@@ -1,0 +1,62 @@
+$primary-font: "Montserrat", sans-serif;
+
+.Image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("../img/familia.png");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 950px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#overlay {
+    position: absolute;
+    opacity: 0.3;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.txtImg {
+    z-index: 3;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 80px;
+    color: white;
+    // border: 1px solid green;
+    font-family: $primary-font;
+}
+
+.txtImg h1 {
+    font-size: 40px;
+    text-shadow: 0.5px 0px 2px rgba(0, 0, 0, 0.63);
+}
+
+.txtImg p {
+    font-size: 20px;
+    text-shadow: 0.5px 0px 2px rgba(0, 0, 0, 0.63);
+}
+
+
+#btn1 {
+    text-decoration: none;
+    margin-top: 60px;
+    padding: 20px;
+    width: 286px;
+    align-self: center;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    color: white;
+    font-size: 25px;
+    transition: all .3s;
+    background-color: rgba(0, 0, 0, 0.199);
+    &:hover {
+        background-color: $primary
+    }
+}

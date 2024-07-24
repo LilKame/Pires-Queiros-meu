@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.navbar {
+  z-index: 10;
+  display: flex;
+  flex-flow: row;
+  height: 100px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0.5px 1px 3px rgba(0, 0, 0, 0.055);
+  /* border: 1px solid rgb(234, 238, 14); */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+}
+
+.logo {
+  flex: 20%;
+  margin-left: 1%;
+  margin-top: 2.5%;
+  /* border:1px solid red;  */
+  text-align: left;
+}
+
+.logo img {
+  height: 200px;
+}
+
+.menu {
+  flex: 70%;
+  /* border:1px solid green;*/
+  text-align: right;
+  padding: 20px;
+}
+
+.menu a {
+  color: rgb(143, 143, 143);
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 16px;
+  cursor: default;
+}
+
+.menu a:hover {
+  color: #0ad1e7;
+  border-top: 4px solid #0ad1e7;
+}
+
+#botao {
+  background: #0ad1e7;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 5px;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+#botao:hover {
+  border: none;
+  background: #0795a5;
+}
+
+.Image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url("../img/familia.png");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 950px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#overlay {
+  position: absolute;
+  opacity: 0.3;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.txtImg {
+  z-index: 3;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 80px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.txtImg h1 {
+  font-size: 40px;
+  text-shadow: 0.5px 0px 2px rgba(0, 0, 0, 0.63);
+}
+
+.txtImg p {
+  font-size: 20px;
+  text-shadow: 0.5px 0px 2px rgba(0, 0, 0, 0.63);
+}
+
+#btn1 {
+  text-decoration: none;
+  margin-top: 60px;
+  padding: 20px;
+  width: 286px;
+  align-self: center;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  color: white;
+  font-size: 25px;
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.199);
+}
+#btn1:hover {
+  background-color: #0ad1e7;
+}
+
+#cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.title-prods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background-color: #0ad1e7;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+#effect-title {
+  width: 290px;
+  height: 10px;
+  background-color: white;
+  position: relative;
+  top: 20px;
+}
+
+.title-prods h1 {
+  margin-top: 50px;
+  background-color: rgba(143, 143, 143, 0.068);
+  width: 175px;
+  font-size: 2em;
+}
+
+.title-prods p {
+  color: white;
+  position: relative;
+  top: -30px;
+}
+
+.box {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  background-size: cover;
+  border: 5px solid #0ad1e7;
+  border-radius: 40px;
+  margin: 80px 30px;
+}
+
+#cd1 {
+  background-image: url(../img/familia.png);
+}
+
+#cd2 {
+  background-image: url(../img/familia.png);
+}
+
+#cd3 {
+  background-image: url(../img/familia.png);
+}
+
+#cd4 {
+  background-image: url(../img/familia.png);
+}
+
+.ttb {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 0;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.493);
+  color: #0ad1e7;
+}
+
+.box img {
+  width: 25px;
+  position: absolute;
+  top: 305px;
+  left: 305px;
+  opacity: 0.6;
+}
+
+.less {
+  z-index: 9;
+  display: none;
+}
+
+.box-down {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.952);
+  color: #0ad1e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top 0.5s ease;
+  text-align: center;
+}
+
+.box:hover .ttb {
+  display: none;
+}
+
+.box:hover img {
+  opacity: 1;
+}
+
+.box:hover .less {
+  display: block;
+  opacity: 0.5;
+}
+
+.box:hover .box-down {
+  top: 0;
+}
+
+#seguradora {
+  overflow: hidden;
+  color: rgb(53, 53, 53);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+  background-image: url(../img/lifeIcon.png);
+  background-size: 50px;
+  background-color: rgb(236, 236, 236);
+}
+
+#seguradora-image {
+  height: 600px;
+  width: 50%;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#seguradora-text {
+  z-index: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 600px;
+  width: 50%;
+}
+
+#seguradora-text div {
+  display: flex;
+  flex-flow: column;
+  width: 70%;
+  height: 500px;
+}
+
+#seguradora-text h2 {
+  width: 450px;
+}
+
+#seguradora-text h2 b {
+  color: #0ad1e7;
+}
+
+#seguradora-text p {
+  width: 98%;
+  font-size: 20px;
+}
+
+#seguradora-text-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#seguradora-image-card {
+  z-index: 1;
+  background-image: url("../img/test-1.jpg");
+  background-position: center;
+  border-radius: 20px;
+  background-color: black;
+  height: 470px;
+  width: 670px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.726);
+}
+
+@keyframes card-image-extra {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#seguradora-image-card-extra {
+  display: flex;
+  position: relative;
+  right: -600px;
+  bottom: 20px;
+  width: 90px;
+  height: 90px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background: linear-gradient(#0ad1e7, rgb(0, 255, 255));
+  transition: transform linear 0.2s;
+  transition: opacity 0.5s linear;
+  animation: card-image-extra 1s infinite;
+  cursor: pointer;
+}
+
+#seguradora-image-card-extra img {
+  transform: scale(0.8);
+}
+
+@keyframes seguradora-image-overlay-entry {
+  from {
+    height: 0;
+  }
+  to {
+    height: 470px;
+  }
+}
+.fade-out {
+  opacity: 0;
+}
+
+#seguradora-image-overlay {
+  overflow: hidden;
+  color: white;
+  display: none;
+  position: absolute;
+  height: 470px;
+  width: 670px;
+  animation: seguradora-image-overlay-entry 1s;
+  background: linear-gradient(rgb(0, 197, 223), rgb(0, 159, 170));
+  opacity: 96%;
+  border-radius: 20px;
+  transition: opacity 1s linear;
+}
+
+@keyframes overlay-text-anim {
+  from {
+    left: 1000px;
+  }
+  to {
+    left: 0;
+  }
+}
+#seguradora-image-overlay-text {
+  font-size: 25px;
+  display: none;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  animation: overlay-text-anim 1s ease;
+}
+
+#seguradora-image-overlay-text-2 {
+  font-size: 25px;
+  display: none;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  animation: overlay-text-anim 1s ease;
+}
+
+#representante {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  box-shadow: 20px 0 12px rgba(0, 0, 0, 0.356);
+  background-color: white;
+  min-height: 600px;
+}
+
+#representante-title {
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+  background: linear-gradient(rgb(0, 217, 255), rgb(0, 247, 255));
+  width: 100%;
+  height: 30%;
+}
+
+#representante-title h1 {
+  font-size: 40px;
+}
+
+#representante-title b {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.048);
+}
+
+#representante-title a {
+  position: relative;
+  text-decoration: none;
+  transition: background-color 0.3s linear;
+}
+
+#representante-title a:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+#representante-card {
+  margin-top: 50px;
+  background-size: 60px;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 70%;
+}
+
+@keyframes cards-animation {
+  from {
+    top: 1000px;
+  }
+  to {
+    top: 0;
+  }
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+  display: none;
+  width: 300px;
+  height: 300px;
+  border: 5px solid white;
+  border-radius: 30px;
+  background: linear-gradient(cyan, rgb(0, 204, 255));
+  animation: cards-animation 1s ease;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.178);
+  transition: transform 0.2s linear;
+}
+
+.cards:hover {
+  transform: scale(1.1);
+}
+
+.cards h1 {
+  color: rgb(59, 59, 59);
+  font-size: 40px;
+}
+
+.cards h3 {
+  color: rgb(255, 255, 255);
+  position: relative;
+  bottom: 50px;
+}
+
+.cards div {
+  display: flex;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+#footer {
+  background-color: rgb(236, 236, 236);
+  color: rgb(143, 143, 143);
+  border-top: 4px solid #0ad1e7;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: start;
+  max-width: 2000px;
+  margin: 0 10px;
+  padding: 20px 20px;
+}
+
+#logo {
+  margin-right: 300px;
+}
+
+#redes {
+  display: flex;
+  flex-direction: column;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px 0;
+}
+
+.footer-section h3 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.footer-section p,
+.footer-section a {
+  margin: 5px 0;
+}
+
+.footer-section a {
+  color: rgb(143, 143, 143);
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section.logo img {
+  max-width: 100px;
+}
+
+#causes {
+  text-align: center;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#btn {
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  width: 170px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  color: white;
+  font-size: 15px;
+  transition: all 0.3s;
+  background-color: #0ad1e7;
+}
+#btn:hover {
+  background-color: rgba(10, 209, 231, 0.6431372549);
+}/*# sourceMappingURL=index.css.map */

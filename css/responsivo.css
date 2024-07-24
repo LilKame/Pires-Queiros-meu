@@ -1,0 +1,177 @@
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    #seguradora {
+        flex-flow: column;
+    }
+
+    #seguradora-image {
+        width: 100%;
+    }
+
+    #seguradora-text {
+        width: 100%;
+    }
+
+    #seguradora-text div {
+        width: 100%;
+    }
+
+    #seguradora-text h2 {
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #seguradora-text p {
+        text-align: center;
+        font-size: 17px;
+        width: 100%;
+    }
+
+    #seguradora-image {
+        justify-content: center;
+        align-items: normal;
+    }
+
+    #seguradora-image-card {
+        border-radius: 20px;
+        background-color: black;
+        height: 210px;
+        width: 310px;
+    }
+
+    #seguradora-image-card-extra {
+        display: none;
+    }
+
+    #seguradora-image-overlay {
+        height: 210px;
+        width: 310px;
+    }
+
+    #seguradora-text-btn {
+        align-items: center;
+    }
+
+    .footer-container {
+        font-size: 16px;
+    }
+
+    #contact {
+        margin-bottom: 20px;
+    }
+
+    #redes {
+        padding-right: 70px;
+    }
+
+    #logo {
+        margin-right: 80px;
+    }
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) and (max-width:768px) {
+    #seguradora {
+        flex-flow: column;
+    }
+
+    #seguradora-image {
+        width: 100%;
+    }
+
+    #seguradora-text {
+        width: 100%;
+    }
+
+    #seguradora-text div {
+        width: 100%;
+    }
+
+    #seguradora-text h2 {
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #seguradora-text p {
+        text-align: center;
+        font-size: 17px;
+        width: 100%;
+    }
+
+    #seguradora-image {
+        justify-content: center;
+    }
+    #seguradora-text-btn {
+        align-items: center;
+    }
+
+    .footer-container {
+        max-width: 2000px;
+    }
+
+    #logo {
+        margin-right: 80px;
+    }
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) and (max-width:992px) {
+    #seguradora {
+        flex-flow: column;
+    }
+
+    #seguradora-image {
+        width: 100%;
+    }
+
+    #seguradora-text {
+        width: 100%;
+    }
+
+    #seguradora-text div {
+        width: 100%;
+    }
+
+    #seguradora-text h2 {
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #seguradora-text p {
+        text-align: center;
+        font-size: 17px;
+        width: 100%;
+    }
+
+    #seguradora-image {
+        justify-content: center;
+    }
+    #seguradora-text-btn {
+        align-items: center;
+    }
+
+    .footer-container {
+        max-width: 2000px;
+    }
+
+    #logo {
+        margin-right: 200px;
+    }
+
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .footer-container {
+        max-width: 2000px;
+    }
+
+    #logo {
+        margin-right: 200px;
+    }
+    
+}
